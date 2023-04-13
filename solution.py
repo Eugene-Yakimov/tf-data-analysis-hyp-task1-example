@@ -8,5 +8,5 @@ def solution(x_success,
              x_cnt, 
              y_success, 
              y_cnt) -> bool:
-  return (proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[0] >= 0 and 
+  return (proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[0] >= 0 or 
           proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[1] < 0.9)
